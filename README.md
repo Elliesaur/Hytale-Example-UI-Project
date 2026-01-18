@@ -1,6 +1,8 @@
-# Hytale Example Plugin
+# Hytale Example UI Plugin
 
 An example project that can build and run plugins for the game Hytale!
+
+This has been enhanced to add support for HyUI.
 
 > **⚠️ Warning: Early Access**    
 > The game Hytale is in early access, and so is this project! Features may be
@@ -9,7 +11,7 @@ An example project that can build and run plugins for the game Hytale!
 
 ## Introduction
 This project contains a Gradle project that can be imported into IDEA and used
-as the foundation for custom Hytale plugins. The template will add the Hytale
+as the foundation for custom Hytale UI plugins. The template will add the Hytale
 server to your classpath and create a run configuration that can be used to
 run your plugin on the server. It can also be used to build a sharable JAR file
 that contains your plugin.
@@ -91,8 +93,8 @@ authenticated.
 
 ## Verifying The Example Plugin
 You can verify the Example plugin has loaded by running the `/test` command 
-in game. It will print the name and version of your plugin. This is for 
-demonstration purposes, and should **NOT** be included in your final build.
+in game. It will print the name and version of your plugin. It will also create a basic HyUI using HYUIML.
+This is for demonstration purposes, and should **NOT** be included in your final build.
 
 The example plugin also includes a recipe defined by an asset pack. This recipe
 allows you to craft 10 dirt into 1 dirt using the crafting window. This is also
