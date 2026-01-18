@@ -47,6 +47,8 @@ javadoc {
 // Adds the Hytale server as a build dependency, allowing you to reference and
 // compile against their code. This requires you to have Hytale installed using
 // the official launcher for now.
+//
+// You will also need the HyUI jar file downloaded from 
 dependencies {
     implementation(files("$hytaleHome/install/$patchline/package/game/latest/Server/HytaleServer.jar"))
 }
@@ -128,4 +130,15 @@ tasks.register('generateVSCodeLaunch') {
         ]
         launchFile.text = groovy.json.JsonOutput.prettyPrint(groovy.json.JsonOutput.toJson(launchConfig))
     }
+}
+
+repositories {
+    maven {
+        url "https://www.cursemaven.com"
+    }
+}
+
+dependencies {
+    // HyUI-0.2.1-all.jar
+    implementation "curse.maven:hyui-1431415:7478206"
 }
