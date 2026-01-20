@@ -139,6 +139,6 @@ repositories {
 }
 
 dependencies {
-    // HyUI-0.3.0-all.jar
-    implementation "curse.maven:hyui-1431415:7479623"
+    // HyUI-0.4.0-all.jar
+    implementation "curse.maven:hyui-1431415:7491739"
 }
